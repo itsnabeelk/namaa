@@ -55,7 +55,12 @@ body {
 .nav-sticky {
   background-color: #ffffff;
   padding: 12px 0px;
+  position: fixed;
   box-shadow: 0px 4px 20px rgba(5, 47, 97, 0.08);
+  position: fixed !important;
+  z-index: 99;
+  width: 100%;
+  top: 0;
 }
 
 .nav-sticky .navbar-nav .nav-item .nav-link {
@@ -117,14 +122,13 @@ body {
 
 
 .hero-6 {
-  padding: 200px 0px 0px;
+  padding: 50px 0px 0px;
   position: relative;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #85bd41 !important;
 }
-
 .hero-6 .hero-content {
   margin-top: 60px;
   text-align: right;
@@ -176,7 +180,8 @@ body {
   padding: 100px 0;
 }
 .bg-primary {
-    background-color: #81bd41 !important;
+  background-color: #81bd41 !important;
+  position: relative;
 }
 
 @media (max-width: 768px) {
@@ -190,12 +195,13 @@ body {
 
 
 .main {
-    position: relative;
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 100px 0;
 }
 #signUpForm {
   width: 80%;
@@ -207,6 +213,7 @@ body {
   border-radius: 12px;
   direction: rtl;
   text-align: right;
+  margin: 100px 0;
 }
 #signUpForm .form-header {
     gap: 5px;
@@ -341,7 +348,7 @@ body {
     display: block !important;
 }
 
-.fixed-top {
+.fixed-top2 {
   background: #85bd41;
 }
 
@@ -408,4 +415,12 @@ button, input, optgroup, select, textarea {
   display: block;
   height: 70px;
 }
+}
+
+.card {
+  height: 250px;
+}
+
+.fixed-top2 {
+  position: relative;
 }
